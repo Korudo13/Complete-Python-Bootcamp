@@ -1,0 +1,35 @@
+1. Write a brief description of all the Object Types and Data Structures we learned about:
+
+    Numbers: Integers (whole numbers) and Floating Point Numbers (or "Floats", decimal numbers).
+
+    Strings: A character or a sequence of characters (words, phrases, sentences, etc.).
+
+    Lists: An ordered sequence of data types. They can be several types.
+
+    Tuples: Immutable (unchangable) sequence of data types.
+
+    Dictionaries: An unordered mapping of data that has a key and an associated value.
+
+
+2. Numbers
+
+Write an equation that uses multiplication, division, and exponent, addition, subtraction that is equal to 100.25.
+
+  (100.25 - .25) / 10**1 * 10 + .25
+
+
+3. Explain what the cell below will produce and why. Can you change it so the answer is correct?
+
+2/3
+
+  The answer is 0. Python 2 uses Classic Division, which truncates. 
+  I can change it to 2.0/3 to get 0.6666666666666666.
+  
+  I can also use casting 2.
+    float(2)/3
+    
+  I can also import from Python 3, which uses True Division
+    from __future__ import division
+      3/2
+    
+    
