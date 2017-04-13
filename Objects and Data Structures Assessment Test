@@ -13,47 +13,102 @@ Write a brief description of all the Object Types and Data Structures we learned
 
 Numbers
 
-1. Write an equation that uses multiplication, division, and exponent, addition, subtraction that is equal to 100.25.
+    1. Write an equation that uses multiplication, division, and exponent, addition, subtraction that is equal to 100.25.
 
-  (100.25 - .25) / 10**1 * 10 + .25
+      (100.25 - .25) / 10**1 * 10 + .25
 
 
-2. Explain what the cell below will produce and why. Can you change it so the answer is correct?
+    2. Explain what the cell below will produce and why. Can you change it so the answer is correct?
 
-2/3
+    2/3
 
-  The answer is 0. Python 2 uses Classic Division, which truncates. 
-  I can change it to 2.0/3 to get 0.6666666666666666.
-  
-  I can also use casting 2.
-    float(2)/3
+      The answer is 0. Python 2 uses Classic Division, which truncates. 
+      I can change it to 2.0/3 to get 0.6666666666666666.
+
+      I can also use casting 2.
+        float(2)/3
+
+      I can also import from Python 3, which uses True Division
+        from __future__ import division
+          3/2
+
+    3. Answer these 3 questions withoutt typing code. Then type code to check your answer.
+
+        What is the value of the expression 4 * (6 + 5)
+
+            44
+
+        What is the value of the expression 4 * 6 + 5
+
+            29
+
+        What is the value of the expression 4 + 6 * 5
+
+            34
+
+    4. What is the TYPE of the result of the expression 3 + 1.5 + 4?
+
+        float
+
+    5. What would you use to find a number's square root, as well as its square
+
+        **
+        100 ** 0.5 = 10  (square root of 100)
+        100 ** 2 = 10,000 (square of 100)
+
     
-  I can also import from Python 3, which uses True Division
-    from __future__ import division
-      3/2
-      
-3. Answer these 3 questions withoutt typing code. Then type code to check your answer.
+Strings
 
-    What is the value of the expression 4 * (6 + 5)
+    1. Given the string 'hello' give an index command that returns 'e'. Use the code below:
+
+        s = 'hello'
+        # Print out 'e' using indexing
+
+            print (s[1])
+
+    2. Reverse the string 'hello' using indexing: s = 'hello'
+
+            s[::-1]
+
+    3. Given the string hello, give two methods of producing the letter 'o' using indexing.
+
+            s[-1]
+            s[4:]
         
-        44
-        
-    What is the value of the expression 4 * 6 + 5
-    
-        29
-        
-    What is the value of the expression 4 + 6 * 5
-    
-        34
-    
-4. What is the TYPE of the result of the expression 3 + 1.5 + 4?
+Lists
 
-    float
+    1. Build this list [0,0,0] two separate ways
+
+        list = [0,0,0]
+
+        ## make the second one ##
+
+
+    2. Reassign 'hello' in this nested list to say 'goodbye' item in this list: 
+        l = [1,2,[3,4, 'hello]]
+
+            goodbye = l[2][2]
+
+    3. Sort the list below:
+        l = [3,4,5,5,6]
+            l.sort()  (the list is already sorted though...)
+        
+ Dictionaries
+ 
+    Using keys and indexing, grab 'hello' from the following dictionaries:
     
-5. What would you use to find a number's square root, as well as its square
-    
-    **
-    100 ** 0.5 = 10  (square root of 100)
-    100 ** 2 = 10,000 (square of 100)
+        d = {'simple_key': 'hello'}
+        # Grab 'hello'
+        
+          d['simple_key']
+          
+       d = {'k1': {'k2': 'hello'}}
+       # Grab 'hello'
+       
+       ## Finish this one ##
+       
+            
+        
+       
     
     
