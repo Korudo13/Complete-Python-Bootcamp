@@ -1,4 +1,4 @@
-1. Write a brief description of all the Object Types and Data Structures we learned about:
+Write a brief description of all the Object Types and Data Structures we learned about:
 
     Numbers: Integers (whole numbers) and Floating Point Numbers (or "Floats", decimal numbers).
 
@@ -11,14 +11,14 @@
     Dictionaries: An unordered mapping of data that has a key and an associated value.
 
 
-2. Numbers
+Numbers
 
-Write an equation that uses multiplication, division, and exponent, addition, subtraction that is equal to 100.25.
+1. Write an equation that uses multiplication, division, and exponent, addition, subtraction that is equal to 100.25.
 
   (100.25 - .25) / 10**1 * 10 + .25
 
 
-3. Explain what the cell below will produce and why. Can you change it so the answer is correct?
+2. Explain what the cell below will produce and why. Can you change it so the answer is correct?
 
 2/3
 
@@ -31,5 +31,29 @@ Write an equation that uses multiplication, division, and exponent, addition, su
   I can also import from Python 3, which uses True Division
     from __future__ import division
       3/2
+      
+3. Answer these 3 questions withoutt typing code. Then type code to check your answer.
+
+    What is the value of the expression 4 * (6 + 5)
+        
+        44
+        
+    What is the value of the expression 4 * 6 + 5
+    
+        29
+        
+    What is the value of the expression 4 + 6 * 5
+    
+        34
+    
+4. What is the TYPE of the result of the expression 3 + 1.5 + 4?
+
+    float
+    
+5. What would you use to find a number's square root, as well as its square
+    
+    **
+    100 ** 0.5 = 10  (square root of 100)
+    100 ** 2 = 10,000 (square of 100)
     
     
