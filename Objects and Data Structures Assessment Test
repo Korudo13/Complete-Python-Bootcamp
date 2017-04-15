@@ -22,7 +22,7 @@ Numbers
 
     2/3
 
-      The answer is 0. Python 2 uses Classic Division, which truncates. 
+      The answer is 0. Python 2 uses Classic Division for Integers, which truncates. 
       I can change it to 2.0/3 to get 0.6666666666666666.
 
       I can also use casting 2.
@@ -73,7 +73,7 @@ Strings
     3. Given the string hello, give two methods of producing the letter 'o' using indexing.
 
             s[-1]
-            s[4:]
+            s[4]
         
 Lists
 
@@ -124,7 +124,7 @@ Lists
         
      2. Can you sort a dictionary? Why or why not?
      
-        Dictionaries can NOT be sorted because mappings are unordered.
+        Dictionaries are mappings, which are not unordered sequences.
 
 
 Tuples
