@@ -32,7 +32,7 @@ Numbers
         from __future__ import division
           3/2
 
-    3. Answer these 3 questions withoutt typing code. Then type code to check your answer.
+    3. Answer these 3 questions without typing code. Then type code to check your answer.
 
         What is the value of the expression 4 * (6 + 5)
 
@@ -81,7 +81,8 @@ Lists
 
         list = [0,0,0]
 
-        ## make the second one ##
+        list = [0,0]
+        list.append(0)
 
 
     2. Reassign 'hello' in this nested list to say 'goodbye' item in this list: 
@@ -103,9 +104,9 @@ Lists
           d['simple_key']
           
        d = {'k1': {'k2': 'hello'}}
-       # Grab 'hello'
+          d['k1']['k2']
        
-       ## Finish this one ##
+       
        
             
         
