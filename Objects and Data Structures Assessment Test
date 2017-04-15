@@ -96,20 +96,105 @@ Lists
         
  Dictionaries
  
-    Using keys and indexing, grab 'hello' from the following dictionaries:
+    1. Using keys and indexing, grab 'hello' from the following dictionaries:
     
         d = {'simple_key': 'hello'}
         # Grab 'hello'
         
           d['simple_key']
           
-       d = {'k1': {'k2': 'hello'}}
+        d = {'k1': {'k2': 'hello'}}
+        #grab hello
+       
           d['k1']['k2']
+          
+       
+        #Getting a little trickier
+        d = {'k1':[{'nest_key':['this is deep',['hello']]}]}
+        #grab hello
+       
+          d['k1'][0]['nest_key'][1]
        
        
+        #This will be hard and annoying!
+        d = {'k1': [1,2, {'k2: ['this is tricky', {'tough': [1,2,['hello']]}]}]}
+        d = {'k1':[1,2,{'k2':['this is tricky',{'tough':[1,2,['hello']]}]}]}
        
-            
+            d['k1'][2]['k2'][1]['tough'][2]
         
+     2. Can you sort a dictionary? Why or why not?
+     
+        Dictionaries can NOT be sorted because mappings are unordered.
+
+
+Tuples
+
+    1. What is the major difference between Tuples and Lists?
+    
+        Tuples are immutable (cannot change values), unlike Lists.
+        
+        
+    2. How do you create a tuple?
+    
+        You declare the variable and use ( ) notation, unlike [ ] notation for lists
+        
+        t = (1,2,3)
+    
+    
+Sets
+
+    1. What is unique about a set?
+    
+        Sets are an UNORDERED collection of UNIQUE elements. You can't have two of the same element.
+        
+            s = set()          
+            s.add(4)     
+            s.add(2)      
+            s.add(4)
+            
+            If I return "s" it displays:
+            {2,4}
+            
+            Even though I added 4 two times, it only shows up once because "1" is already represented in the set.
+            
+            
+     2. Use a set to find the unique values of the list below
        
+       l = [1,2,2,33,4,4,11,22,3,3,2]
+       
+            set(l)
+            
+Booleans
+
+    1. What will be the resulting Boolean of the following pieces of code (answer first then check by typing it in!)
     
-    
+         # Answer before running the cell
+            2 > 3
+                False
+            
+            3 <= 2
+                False
+            
+            3 == 2.0
+                False
+            
+            3.0 == 3
+                True
+            
+            4 ** 0.5 != 2
+                False
+       
+      2. Final Question: What is the boolean output of the cell block below?
+      
+        # two nested lists
+        l_one = [1,2,[3,4]]
+        l_two = [1,2,{'k1: 4}]
+        
+        #True or false?
+        l_one[2][0] >= l_two[2]['k1]
+        
+               l_one[2][0] is 3
+               l_two[2]['k1] is 4
+               
+                    3 is less then 4, not greater than or equal to. 
+                    Therefore the answer is "False".
