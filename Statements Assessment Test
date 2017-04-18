@@ -1,4 +1,9 @@
 1. Use for, split() and if to create a Statement that will print out letters that start with 's:
+   st = 'Print only the words that start with s in this sentence'
+
+      for word in st.split():
+         if word.startswith('s'):
+            print word
 
 2. Use range() to print all the even numbers from 0 to 10.
 
