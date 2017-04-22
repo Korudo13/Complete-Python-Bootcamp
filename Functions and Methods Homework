@@ -1,0 +1,42 @@
+1. Write a function that computes the voalume of a sphere given its radius.
+
+2. Write a function that checks whether a number is in a given range (Inclusive of high and low)
+
+  A. Print statement within range.
+  
+  B. Returns the boolean
+  
+3. Write a Python function that accepts a string and calculate the number of upper case letters
+   and lower case letters.
+   
+      Sample String:  'Hello Mr. Rogers, how are you this fine Tuesday?'
+      Expected Output:
+          No. of Upper case characters: 4
+          No. of Lower case characters: 33
+          
+4. Write a Python function that takes a list and returns a new list with unique elements of the first list.
+
+    Sample List: [1,1,1,1,1,2,2,3,3,3,3,4,5]
+    
+    Unique List: [1,2,3,4,5]
+
+
+5. Write a Python function to multiply all the numbers in a list.
+
+6. Write a Python function that checks whether a passed string is a palindrome or not.
+
+7. Write a Python function to check whether a string a pangram or not.
+
+    Note: Pangrams are words or sentences containing every letter of the alphabet at least once.
+    
+      Example: "The quick brown fox jumps over the lazy dog"
+      
+      Hint: Look at the string module  
+      
+        import string
+        
+          def ispangram(str1, alphabet=string.ascii_lowercase):
+              # do the rest
+    
+      
+8. 
