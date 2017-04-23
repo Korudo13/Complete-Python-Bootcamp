@@ -1,6 +1,15 @@
-1. Write a function that computes the voalume of a sphere given its radius.
+1. Write a function that computes the volume of a sphere given its radius.
+
+    import math
+
+    def volume(radius):
+      return (4*math.pi * radius**3)/3
+
+      print(volume(3))
 
 2. Write a function that checks whether a number is in a given range (Inclusive of high and low)
+
+  
 
   A. Print statement within range.
   
