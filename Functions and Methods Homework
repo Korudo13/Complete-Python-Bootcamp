@@ -6,15 +6,20 @@
       return (4*math.pi * radius**3)/3
 
       print(volume(3))
+      
 
 2. Write a function that checks whether a number is in a given range (Inclusive of high and low)
 
-  
+    def range_check(number,low,high):
+        print number
+        if number in range(low,high):
+            print 'True'
+        else:
+            print 'False'
 
-  A. Print statement within range.
-  
-  B. Returns the boolean
-  
+     range_check(5,1,10)
+     
+
 3. Write a Python function that accepts a string and calculate the number of upper case letters
    and lower case letters.
    
