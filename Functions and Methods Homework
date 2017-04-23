@@ -23,6 +23,12 @@
 3. Write a Python function that accepts a string and calculate the number of upper case letters
    and lower case letters.
    
+   ##Steps:
+   
+        ## Iterate through a string
+        ## keep track of the count of each character
+        ## use a Dictionary (key and value)
+   
       Sample String:  'Hello Mr. Rogers, how are you this fine Tuesday?'
       Expected Output:
           No. of Upper case characters: 4
