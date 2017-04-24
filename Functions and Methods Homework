@@ -34,6 +34,20 @@
           No. of Upper case characters: 4
           No. of Lower case characters: 33
           
+          
+          upperLowerString = "I can't believe I'm in is St. Petersburg! Davai!"
+
+            #Attempt 1   4/24/2017
+                    def Upper_Lower(string):
+                        upper = []
+                        lower = []
+
+                        for word in string:
+                            print word
+                        print 'There are', upper, 'UPPER CASE letters in this string.'
+                        print 'There are', lower, 'lower case letters in this string.'
+
+          
 4. Write a Python function that takes a list and returns a new list with unique elements of the first list.
 
     Sample List: [1,1,1,1,1,2,2,3,3,3,3,4,5]
