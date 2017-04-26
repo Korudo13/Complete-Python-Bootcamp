@@ -22,30 +22,23 @@
 
 3. Write a Python function that accepts a string and calculate the number of upper case letters
    and lower case letters.
-   
-   ##Steps:
-   
-        ## Iterate through a string
-        ## keep track of the count of each character
-        ## use a Dictionary (key and value)
-   
-      Sample String:  'Hello Mr. Rogers, how are you this fine Tuesday?'
-      Expected Output:
-          No. of Upper case characters: 4
-          No. of Lower case characters: 33
           
+         upperLowerString = "Las Vegas and New York City are big cities in the United States."
           
-          upperLowerString = "I can't believe I'm in is St. Petersburg! Davai!"
+         def UpperLowerCheck(string):
 
-            #Attempt 1   4/24/2017
-                    def Upper_Lower(string):
-                        upper = []
-                        lower = []
-
-                        for word in string:
-                            print word
-                        print 'There are', upper, 'UPPER CASE letters in this string.'
-                        print 'There are', lower, 'lower case letters in this string.'
+            charCounter = {'upper': 0, 'lower':0}
+    
+            for char in string:
+                if char.isupper():
+                    charCounter['upper']+=1
+                elif char.islower():
+                    charCounter['lower']+=1
+                else:
+                    pass
+            print 'Original string : ', string
+            print 'Number of Upper Case characters: ', charCounter['upper']
+            print 'Number of lower case characters: ', charCounter['lower']
 
           
 4. Write a Python function that takes a list and returns a new list with unique elements of the first list.
@@ -73,4 +66,4 @@
               # do the rest
     
       
-8. 
+
