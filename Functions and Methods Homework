@@ -23,7 +23,7 @@
 3. Write a Python function that accepts a string and calculate the number of upper case letters
    and lower case letters.
           
-         upperLowerString = "Las Vegas and New York City are big cities in the United States."
+         upperLowerString = 'Las Vegas and New York City are big cities in the United States.'
           
          def UpperLowerCheck(string):
 
