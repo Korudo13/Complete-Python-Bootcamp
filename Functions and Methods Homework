@@ -64,6 +64,17 @@
 
 6. Write a Python function that checks whether a passed string is a palindrome or not.
 
+palindrome1 = 'racecar'
+fakePalindrome = 'racecarSandwich'
+
+def PalindromeChecker(palindromeString):
+    reversedWord = palindromeString[::-1]
+    if reversedWord == palindromeString:
+        print 'This is a palindrome!'
+    else:
+        print 'This is not a palindrome...'
+        
+
 7. Write a Python function to check whether a string a pangram or not.
 
     Note: Pangrams are words or sentences containing every letter of the alphabet at least once.
