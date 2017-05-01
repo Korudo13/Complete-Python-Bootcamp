@@ -50,6 +50,18 @@
 
 5. Write a Python function to multiply all the numbers in a list.
 
+    singleDigitsList = [1,2,3,4,5,6,7,8,9]
+
+    def NumbersListMultiplyFunction(numbersList):
+
+        product = 1
+
+        for number in range(0,len(numbersList)):
+            product *= numbersList[number]
+
+        return product
+        
+
 6. Write a Python function that checks whether a passed string is a palindrome or not.
 
 7. Write a Python function to check whether a string a pangram or not.
