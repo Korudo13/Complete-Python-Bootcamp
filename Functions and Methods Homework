@@ -43,9 +43,11 @@
           
 4. Write a Python function that takes a list and returns a new list with unique elements of the first list.
 
-    Sample List: [1,1,1,1,1,2,2,3,3,3,3,4,5]
-    
-    Unique List: [1,2,3,4,5]
+    namesList = ['Bob', 'Bill', 'Bill', 'Alexander', 'Tasha', 'Natasha', 'Natasha', 'Theo']
+
+    def ListToSetFunction(firstList):
+        newSet = set(firstList)
+        return newSet
 
 
 5. Write a Python function to multiply all the numbers in a list.
