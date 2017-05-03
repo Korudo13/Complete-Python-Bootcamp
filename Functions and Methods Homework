@@ -81,12 +81,12 @@ def PalindromeChecker(palindromeString):
 
     Note: Pangrams are words or sentences containing every letter of the alphabet at least once.
     
+      import string 
+      
       pangramExample = 'The quick brown fox jumps over the lazy dog'
       fakePangram = 'Duck quick quack'
       
       alphabet = set(string.ascii_lowercase)
-      
-      import string 
       
       def PangramCheckFunction(pangramString):
         print pangramString
