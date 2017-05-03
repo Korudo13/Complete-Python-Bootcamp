@@ -81,42 +81,19 @@ def PalindromeChecker(palindromeString):
 
     Note: Pangrams are words or sentences containing every letter of the alphabet at least once.
     
-      Example: "The quick brown fox jumps over the lazy dog"
+      pangramExample = 'The quick brown fox jumps over the lazy dog'
+      fakePangram = 'Duck quick quack'
       
-      Hint: Look at the string module  
+      alphabet = set(string.ascii_lowercase)
       
-        import string
-        
-          def ispangram(str1, alphabet=string.ascii_lowercase):
-              # do the rest
-    
-    #### INCOMPLETE ####
+      import string 
       
-    # What I'm trying to do:
-    # 1. input a string as a parameter for the function
-    # 2. check to see if the string contains every letter of the alpabet in it
-        #2A. turn the string into a set, to show only unique letters
-            #2Aa. if all of the letters of alphabet are IN string, then print 'This IS NOT a pangram'
-            #2Ab. if all the letters of alphabet are IN string, then print 'This IS a pangram'
-    # 4. else: print 
-
-     pangramExample = 'The quick brown fox jumps over the lazy dog'
-     fakePangram = 'Duck quick quack'
-
-     import string 
-
-    def PangramCheckFunction(pangramString, alphabet = string.ascii_lowercase ):
-        pangramSet = set(pangramString)
-        for letter in alphabet:
-            if letter in pangramSet:
-                break
-                print 'This IS a pangram'
-            else:
-                break
-                print 'This IS NOT a pangram'
-    
+      def PangramCheckFunction(pangramString):
+      
         print pangramString
-        print alphabet
-    
-    #### INCOMPLETE ####
-
+        pangramSet = set(pangramString)
+        
+        if pangramSet >= alphabet:
+            print 'This IS a pangram'
+        else:
+            print 'This NOT a pangram'
