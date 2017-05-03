@@ -89,10 +89,8 @@ def PalindromeChecker(palindromeString):
       import string 
       
       def PangramCheckFunction(pangramString):
-      
         print pangramString
         pangramSet = set(pangramString)
-        
         if pangramSet >= alphabet:
             print 'This IS a pangram'
         else:
