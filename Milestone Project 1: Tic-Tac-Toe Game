@@ -1,0 +1,60 @@
+'''
+Milestone Project 1: Tic Tac Toe Game
+
+Requirements: 
+    A, We need to print a board.
+    B. Take in player input.
+    C. Place their input on the board.
+    D. Check if the game is won,tied, lost, or ongoing.
+    E. Repeat C and D until the game has been won or tied.
+    F. Ask if players want to play again.
+
+- 3 by 3 grid (done)
+   - basic solution = done
+   - Goal: make the grid into a 3x3 list (array)
+        - Two Dimensional List
+- black background
+- white lines
+- Player 1 is Blue
+- Player 2 is Yellow
+- Winner is Green
+
+
+Each space is a coordinate. Use a multi-dimensional list.
+3 rows, 3 columns
+'''
+-------------
+code
+-------------
+
+from __future__ import print_function
+
+# make a mutli-dimensional list (for a coordinates system)
+x_player = 'X'
+o_player = 'O'
+
+
+def StartGame():
+    print 'Player 1 is: ' + x_player
+    print 'Player 2 is: ' + o_player
+    
+def PlayerInput():
+    # Create a function that accepts player raw_input
+        # player selects space with numpad keys
+    # outputs the space with their player marker
+
+def PrintBoard():
+    board = [
+            [x_player,o_player,o_player], # top row
+            [x_player,o_player,x_player], # middle row
+            [o_player,x_player,o_player]  # bottom row
+            ]
+
+    print board[0]
+    print board[1]
+    print board[2]
+    
+def EndGame(): 
+# if game is Won or Tied, then do this
+    print 'Player ' + o_player + ' Wins!'
+    print 'Game Over.'
