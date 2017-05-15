@@ -2,7 +2,7 @@
 Milestone Project 1: Tic Tac Toe Game
 
 Requirements: 
-    A, We need to print a board.
+    A, Print a board.
     B. Take in player input.
     C. Place their input on the board.
     D. Check if the game is won,tied, lost, or ongoing.
