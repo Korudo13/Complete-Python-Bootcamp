@@ -38,10 +38,24 @@ def StartGame():
     print 'Player 1 is: ' + x_player
     print 'Player 2 is: ' + o_player
     
-def PlayerInput():
-    # Create a function that accepts player raw_input
-        # player selects space with numpad keys
-    # outputs the space with their player marker
+def Input_Move():
+    player_input = raw_input('Enter a space: ')
+    player_move = (
+                    {'bottom left space':'X', #change this to print the board with X on the bottom-left
+                    '2':'bottom middle space',
+                    '3':'bottom right space',
+                    '4':'middle left space',
+                    '5':'middle middle space',
+                    '6':'middle right space',
+                    '7':'top left space',
+                    '8':'top middle space',
+                    '9':'top right space'
+                    }
+                    )
+    
+    if player_input == '1':
+        print(player_move['bottom left space'])
+
 
 def PrintBoard():
     board = [
