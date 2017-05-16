@@ -33,6 +33,18 @@ from __future__ import print_function
 x_player = 'X'
 o_player = 'O'
 
+def DrawBoard():#(board):
+    print('   |   |  ')
+    #print(' ' +board[7] + ' | ' + board[8] + ' | ' + board[9])
+    print('   |   |  ')
+    print('__________')
+    #print(' ' +board[4] + ' | ' + board[5] + ' | ' + board[6])
+    print('   |   |  ')
+    print('__________')
+    print('   |   |  ')
+    #print(' ' +board[1] + ' | ' + board[2] + ' | ' + board[3])
+
+
 
 def StartGame():
     print 'Player 1 is: ' + x_player
