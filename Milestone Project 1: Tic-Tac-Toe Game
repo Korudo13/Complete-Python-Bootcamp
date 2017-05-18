@@ -28,6 +28,7 @@ code
 -------------
 
 from __future__ import print_function
+from IPython.display import clear_output
 
 # make a mutli-dimensional list (for a coordinates system)
 x_player = 'X'
