@@ -52,7 +52,7 @@ def StartGame():
 def Input_Move():
     player_input = raw_input('Enter a space: ')
     player_move = (
-                    {'bottom left space':'X', #change this to print the board with X on the bottom-left
+                    {'1':'bottom left space', #change this to print the board with X on the bottom-left
                     '2':'bottom middle space',
                     '3':'bottom right space',
                     '4':'middle left space',
@@ -65,7 +65,35 @@ def Input_Move():
                     )
     
     if player_input == '1':
-        print(player_move['bottom left space'])
+        print(player_move['1'])
+        
+    elif player_input == '2':
+        print(player_move['2'])
+        
+    elif player_input == '3':
+        print(player_move['3'])
+        
+    elif player_input == '4':
+        print(player_move['4'])
+        
+    elif player_input == '5':
+        print(player_move['5'])
+        
+    elif player_input == '6':
+        print(player_move['6'])
+        
+    elif player_input == '7':
+        print(player_move['7'])
+        
+    elif player_input == '8':
+        print(player_move['8'])
+        
+    elif player_input == '9':
+        print(player_move['9'])
+        
+    else:
+        print('Invalid Move')
+
 
 
 def PrintBoard():
