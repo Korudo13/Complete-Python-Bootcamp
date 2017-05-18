@@ -94,21 +94,36 @@ def Input_Move():
         
     else:
         print('Invalid Move')
+        
+def Game_Won():
+    win_combination = ({   # shows the combination of keys for win conditions from a player 
+           'top left horizontal': '789',
+            'middle horizontal': '456',
+            'bottom horizontal': '123',
+            
+            'left vertical': '147',
+            'middle vertical': '258',
+            'right vertical': '369',
+            
+            'diagonal 1': '159',
+            'diagonal 2': '357'
+            })
 
-
-
-def PrintBoard():
-    board = [
-            [x_player,o_player,o_player], # top row
-            [x_player,o_player,x_player], # middle row
-            [o_player,x_player,o_player]  # bottom row
-            ]
-
-    print board[0]
-    print board[1]
-    print board[2]
+def Game_Status_Check():
+    # Make a function that checks if the game is won or ongoing       
     
-def EndGame(): 
-# if game is Won or Tied, then do this
-    print 'Player ' + o_player + ' Wins!'
-    print 'Game Over.'
+    while game_won or game_tied == false:
+        game_ongoing == true
+
+    
+    if game_ongoing == true:
+        game_won == false
+        game_tied == false
+        
+    elif game_ongoing == false:
+        return
+        #if condition for game being won
+            #game_won = true
+        
+        #elif condition for game tied
+            #game_tied = true
