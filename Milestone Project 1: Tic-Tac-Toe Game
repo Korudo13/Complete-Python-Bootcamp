@@ -96,7 +96,7 @@ def Input_Move():
         print('Invalid Move')
         
 def Game_Won():
-    win_combination = ({   # shows the combination of keys for win conditions from a player 
+    win_combination = ({   # shows the combination of keys required for player to win 
            'top left horizontal': '789',
             'middle horizontal': '456',
             'bottom horizontal': '123',
