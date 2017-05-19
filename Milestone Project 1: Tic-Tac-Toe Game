@@ -30,6 +30,7 @@ code
 from __future__ import print_function
 from IPython.display import clear_output
 
+
 # make a mutli-dimensional list (for a coordinates system)
 x_player = 'X'
 o_player = 'O'
@@ -108,6 +109,9 @@ def Game_Won():
             '159': 'diagonal 1',
             '357': 'diagonal 2'
             })
+            
+           # if player's position = win_combination[any]:
+                print: "Player ", (relevant player), "wins!"
 
 def Game_Status_Check():
     # Make a function that checks if the game is won or ongoing       
