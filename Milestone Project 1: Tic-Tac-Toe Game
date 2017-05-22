@@ -2,12 +2,16 @@
 Milestone Project 1: Tic-Tac-Toe Game
 
 Requirements: 
-    A, Print a board.
-    B. Take in player input.
-    C. Place their input on the board.
-    D. Check if the game is won,tied, lost, or ongoing.
-    E. Repeat C and D until the game has been won or tied.
-    F. Ask if players want to play again.
+    1.  Function: Print out a board. Set up board as list, where index 1-9 corresponds to a number on numpad, to get 3x3 board. (done)
+    2.  Function: Take in player input and assign their marker as 'X' or 'O'. Use while loops to continually ask until I get the correct answer.
+    3.  Function: Takes (on the board list object) a marker ('X' or 'O') and desired position (1-9) and assigns it to board
+    4.  Function: Takes in board and mark (X or O) and then checks to see if mark has won
+    5.  Function: Uses random module to randomly decide which player goes first.
+    6.  Function: returns boolean indicating whether space on board is freely available
+    7.  Function: Checks if board is full and returns a boolean. True = full, False = not full
+    8.  Function: Asks for player's next position (1-9), then uses Step 6's function to check if it's a free position. If so, return the position for later use.
+    9.  Function: Asks player if they want to play again. Returns boolean True if player wants to play again.
+    10. Use while loops and functions I made to run the game.
 
 - 3 by 3 grid (done)
    - basic solution = done
@@ -23,9 +27,6 @@ Requirements:
 Each space is a coordinate. Use a multi-dimensional list.
 3 rows, 3 columns
 '''
--------------
-code
--------------
 
 from __future__ import print_function
 from IPython.display import clear_output
@@ -37,18 +38,17 @@ o_player = 'O'
 
 '''
 
-def Draw_Board():#(board):
+def Draw_Board(board):
+    clear_output()
     print('   |   |  ')
-    #print(' ' +board[7] + ' | ' + board[8] + ' | ' + board[9])
+    print(' ' +board[7] + ' | ' + board[8] + ' | ' + board[9])
+    print('   |   |  ')
     print('---|---|---')
-    #print(' ' +board[4] + ' | ' + board[5] + ' | ' + board[6])
+    print(' ' +board[4] + ' | ' + board[5] + ' | ' + board[6])
     print('   |   |  ')
     print('---|---|---')
+    print(' ' +board[1] + ' | ' + board[2] + ' | ' + board[3])
     print('   |   |  ')
-    #print(' ' +board[1] + ' | ' + board[2] + ' | ' + board[3])
-
-## Print this ---------->  board = ['anything','X','X','X','O','X','O','X','O','O']
-## Print this too ------>  Draw_Board(board)
 
 '''
 def StartGame():
@@ -117,11 +117,6 @@ def Game_Won():
             '357': 'diagonal 2'
             })
             
-        '''
-       if player's position = win_combination[any]:
-            print: "Player ", (relevant player), "wins!"
-        '''
-
 
 def Game_Status_Check():
     # Make a function that checks if the game is won or ongoing       
@@ -136,10 +131,4 @@ def Game_Status_Check():
         
     elif game_ongoing == false:
         return
-        '''
-        if condition for game being won:
-            game_won = true
-        
-        elif condition for game tied
-            game_tied = true
-        '''
+
