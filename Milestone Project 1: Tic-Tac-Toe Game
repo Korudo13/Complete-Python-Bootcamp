@@ -3,15 +3,27 @@ Milestone Project 1: Tic-Tac-Toe Game
 
 Requirements: 
     1.  Function: Print out a board. Set up board as list, where index 1-9 corresponds to a number on numpad, to get 3x3 board. (done)
-    2.  Function: Take in player input and assign their marker as 'X' or 'O'. Use while loops to continually ask until I get the correct answer.
+    
+    2.  Function: Take in player input and assign their marker as 'X' or 'O'. 
+                  Use while loops to continually ask until I get the correct answer.
+                  
     3.  Function: Takes (on the board list object) a marker ('X' or 'O') and desired position (1-9) and assigns it to board
+    
     4.  Function: Takes in board and mark (X or O) and then checks to see if mark has won
+    
     5.  Function: Uses random module to randomly decide which player goes first.
+    
     6.  Function: returns boolean indicating whether space on board is freely available
+    
     7.  Function: Checks if board is full and returns a boolean. True = full, False = not full
-    8.  Function: Asks for player's next position (1-9), then uses Step 6's function to check if it's a free position. If so, return the position for later use.
+    
+    8.  Function: Asks for player's next position (1-9), then uses Step 6's function to check if it's a free position. 
+                  If so, return the position for later use.
+                  
     9.  Function: Asks player if they want to play again. Returns boolean True if player wants to play again.
+    
     10. Use while loops and functions I made to run the game.
+    
 
 - 3 by 3 grid (done)
    - basic solution = done
