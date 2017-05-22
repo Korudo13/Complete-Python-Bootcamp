@@ -47,7 +47,8 @@ def Draw_Board():#(board):
     print('   |   |  ')
     #print(' ' +board[1] + ' | ' + board[2] + ' | ' + board[3])
 
-
+## Print this ---------->  board = ['anything','X','X','X','O','X','O','X','O','O']
+## Print this too ------>  Draw_Board(board)
 
 '''
 def StartGame():
