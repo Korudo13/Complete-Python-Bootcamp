@@ -59,6 +59,22 @@ def Draw_Board(board):
     
     board = [0,'X','O','O','X','X','O','O','O','X']
 
+
+# incomplete
+
+def Player_Input():
+    
+    marker = ''
+    while not(marker == 'O' or marker == 'X'):  # allows any wrong input to continue the loop
+        marker = raw_input('Player 1: Do you want to be X or O? ').upper()
+        
+    if marker == 'X':
+        return('X','O')
+    
+    else:
+        return('O','X')
+
+
 '''
 def StartGame():
     print 'Player 1 is: ' + x_player
