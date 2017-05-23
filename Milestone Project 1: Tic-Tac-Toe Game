@@ -49,18 +49,15 @@ x_player = 'X'
 o_player = 'O'
 
 '''
-
 def Draw_Board(board):
     clear_output()
-    print('   |   |  ')
     print(' ' +board[7] + ' | ' + board[8] + ' | ' + board[9])
-    print('   |   |  ')
     print('---|---|---')
     print(' ' +board[4] + ' | ' + board[5] + ' | ' + board[6])
-    print('   |   |  ')
     print('---|---|---')
     print(' ' +board[1] + ' | ' + board[2] + ' | ' + board[3])
-    print('   |   |  ')
+    
+    board = [0,'X','O','O','X','X','O','O','O','X']
 
 '''
 def StartGame():
@@ -87,33 +84,43 @@ def Input_Move():
     
     if player_input == '1':
         print(player_move['1'])
+        Draw_Board(player_move['1']) # progress. Now I just need it to print correct board layout.
         
     elif player_input == '2':
         print(player_move['2'])
+        Draw_Board(player_move['2'])
         
     elif player_input == '3':
         print(player_move['3'])
+        Draw_Board(player_move['3'])
         
     elif player_input == '4':
         print(player_move['4'])
+        Draw_Board(player_move['4'])
         
     elif player_input == '5':
         print(player_move['5'])
+        Draw_Board(player_move['5'])
         
     elif player_input == '6':
         print(player_move['6'])
+        Draw_Board(player_move['6'])
         
     elif player_input == '7':
         print(player_move['7'])
+        Draw_Board(player_move['7'])
         
     elif player_input == '8':
         print(player_move['8'])
+        Draw_Board(player_move['8'])
         
     elif player_input == '9':
         print(player_move['9'])
+        Draw_Board(player_move['9'])
         
     else:
         print('Invalid Move')
+        
         
 def Game_Won():
     win_combination = ({   # shows the combination of keys for win conditions from a player 
