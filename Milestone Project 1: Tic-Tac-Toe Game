@@ -7,7 +7,7 @@ Requirements:
     2.  Function: Take in player input and assign their marker as 'X' or 'O'. 
                   Use while loops to continually ask until I get the correct answer.
                   
-    3.  Function: Takes (on the board list object) a marker ('X' or 'O') and desired position (1-9) and assigns it to board
+    3.  Function: Takes (on the board list object) a marker ('X' or 'O') and desired position (1-9) and assigns it to board (half-done)
     
     4.  Function: Takes in board and mark (X or O) and then checks to see if mark has won
     
@@ -36,19 +36,11 @@ Requirements:
 - Winner is Green
 
 
-Each space is a coordinate. Use a multi-dimensional list.
-3 rows, 3 columns
-'''
+#####  code   ########
 
 from __future__ import print_function
 from IPython.display import clear_output
 
-'''
-make a mutli-dimensional list (for a coordinates system)
-x_player = 'X'
-o_player = 'O'
-
-'''
 def Draw_Board(board):
     clear_output()
     print(' ' +board[7] + ' | ' + board[8] + ' | ' + board[9])
@@ -58,9 +50,6 @@ def Draw_Board(board):
     print(' ' +board[1] + ' | ' + board[2] + ' | ' + board[3])
     
     board = [0,'X','O','O','X','X','O','O','O','X']
-
-
-# incomplete
 
 def Player_Input():
     
@@ -74,17 +63,10 @@ def Player_Input():
     else:
         return('O','X')
 
-
-'''
-def StartGame():
-    print 'Player 1 is: ' + x_player
-    print 'Player 2 is: ' + o_player
     
-'''
-
+def Input_Move(): # next: make it so either X or O appears in the correct space
     
-def Input_Move():
-    player_input = raw_input('Enter a space: ')
+    player_input = raw_input('Make your next move: ')
     player_move = (
                     {'1':' X        ' , #There are 10 indeces (0-9). The 'X' in this dictionary correlates to the space on the board
                      '2':'  X       '  ,
@@ -100,7 +82,7 @@ def Input_Move():
     
     if player_input == '1':
         Draw_Board(player_move['1']) ##There are 10 indeces (0-9). The 'X' in this dictionary correlates to the space on the board
-        
+
     elif player_input == '2':
         Draw_Board(player_move['2'])
         
@@ -127,7 +109,6 @@ def Input_Move():
         
     else:
         print('Invalid Move')
-        
         
         
 def Game_Won():
@@ -158,4 +139,3 @@ def Game_Status_Check():
         
     elif game_ongoing == false:
         return
-
