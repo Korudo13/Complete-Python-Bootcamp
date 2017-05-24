@@ -86,15 +86,15 @@ def StartGame():
 def Input_Move():
     player_input = raw_input('Enter a space: ')
     player_move = (
-                    {'1':'bottom left space', #change this to print the board with X on the bottom-left
-                    '2':'bottom middle space',
-                    '3':'bottom right space',
-                    '4':'middle left space',
-                    '5':'middle middle space',
-                    '6':'middle right space',
-                    '7':'top left space',
-                    '8':'top middle space',
-                    '9':'top right space'
+                    {'1':' X        ', #There are 10 indeces (0-9). The 'X' in this dictionary correlates to the space on the board
+                    '2':'  X       ',
+                    '3':'   X      ',
+                    '4':'    X      ',
+                    '5':'     X      ',
+                    '6':'      X   ',
+                    '7':'       X  ',
+                    '8':'        X  ',
+                    '9':'         X'
                     }
                     )
     
@@ -136,6 +136,7 @@ def Input_Move():
         
     else:
         print('Invalid Move')
+        
         
         
 def Game_Won():
