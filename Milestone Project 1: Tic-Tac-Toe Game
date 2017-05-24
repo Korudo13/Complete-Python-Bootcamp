@@ -86,52 +86,43 @@ def StartGame():
 def Input_Move():
     player_input = raw_input('Enter a space: ')
     player_move = (
-                    {'1':' X        ', #There are 10 indeces (0-9). The 'X' in this dictionary correlates to the space on the board
-                    '2':'  X       ',
-                    '3':'   X      ',
-                    '4':'    X      ',
-                    '5':'     X      ',
-                    '6':'      X   ',
-                    '7':'       X  ',
-                    '8':'        X  ',
-                    '9':'         X'
+                    {'1':' X        ' , #There are 10 indeces (0-9). The 'X' in this dictionary correlates to the space on the board
+                     '2':'  X       '  ,
+                     '3':'   X      '  ,
+                     '4':'    X      ' ,
+                     '5':'     X      ',
+                     '6':'      X   '  ,
+                     '7':'       X  '  ,
+                     '8':'        X  ' ,
+                     '9':'         X'
                     }
                     )
     
     if player_input == '1':
-        print(player_move['1'])
-        Draw_Board(player_move['1']) # progress. Now I just need it to print correct board layout.
+        Draw_Board(player_move['1']) ##There are 10 indeces (0-9). The 'X' in this dictionary correlates to the space on the board
         
     elif player_input == '2':
-        print(player_move['2'])
         Draw_Board(player_move['2'])
         
     elif player_input == '3':
-        print(player_move['3'])
         Draw_Board(player_move['3'])
         
     elif player_input == '4':
-        print(player_move['4'])
         Draw_Board(player_move['4'])
         
     elif player_input == '5':
-        print(player_move['5'])
         Draw_Board(player_move['5'])
         
     elif player_input == '6':
-        print(player_move['6'])
         Draw_Board(player_move['6'])
         
     elif player_input == '7':
-        print(player_move['7'])
         Draw_Board(player_move['7'])
         
     elif player_input == '8':
-        print(player_move['8'])
         Draw_Board(player_move['8'])
         
     elif player_input == '9':
-        print(player_move['9'])
         Draw_Board(player_move['9'])
         
     else:
