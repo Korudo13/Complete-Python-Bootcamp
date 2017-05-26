@@ -2,10 +2,10 @@
 Milestone Project 1: Tic-Tac-Toe Game
 
 Requirements: 
-    1.  Function: Print out a board. Set up board as list, where index 1-9 corresponds to a number on numpad, to get 3x3 board. (done)
+    1.  Function: Print out a board. Set up board as list, where index 1-9 corresponds to a number on numpad, to get 3x3 board. (DONE)
     
     2.  Function: Take in player input and assign their marker as 'X' or 'O'. 
-                  Use while loops to continually ask until I get the correct answer.
+                  Use while loops to continually ask until I get the correct answer. (DONE)
                   
     3.  Function: Takes (on the board list object) a marker ('X' or 'O') and desired position (1-9) and assigns it to board (half-done)
     
