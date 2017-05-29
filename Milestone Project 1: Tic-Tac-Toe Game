@@ -120,18 +120,23 @@ def Input_Move(): # next: make it so either X or O appears in the correct space
         
         
 def Game_Won():
-    win_combination = ({   # shows the combination of keys for win conditions from a player 
-           '789': 'top left horizontal',
-           '456':'middle horizontal',
-           '123': 'bottom horizontal',
-            
-            '147': 'left vertical',
-            '258': 'middle vertical',
-            '369': 'right vertical',
-            
-            '159': 'diagonal 1',
-            '357': 'diagonal 2'
-            })
+    #win_combination = ({   # shows the combination of keys for win conditions from a player 
+           
+        # Horizontal Win Combinations
+        return ((board[7] == mark and board[8] == mark and board[9] == mark) or
+        (board[4] == mark and board[5] == mark and board[6] == mark) or
+        (board[1] == mark and board[2] == mark and board[3] == mark) or
+        
+        # Vertical Win Combinations
+        (board[1] == mark and board[4] == mark and board[7] == mark) or
+        (board[2] == mark and board[5] == mark and board[8] == mark) or
+        (board[3] == mark and board[6] == mark and board[9] == mark) or
+        
+        # Diagnonal Win Combinations
+        (board[1] == mark and board[5] == mark and board[9] == mark) or
+        (board[3] == mark and board[5] == mark and board[7] == mark))
+
+           # })
             
 
 def Game_Status_Check():
