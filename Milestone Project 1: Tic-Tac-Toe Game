@@ -7,7 +7,7 @@ Requirements:
     2.  Function: Take in player input and assign their marker as 'X' or 'O'. 
                   Use while loops to continually ask until I get the correct answer. (DONE)
                   
-    3.  Function: Takes (on the board list object) a marker ('X' or 'O') and desired position (1-9) and assigns it to board (half-done)
+    3.  Function: Takes (on the board list object) a marker ('X' or 'O') and desired position (1-9) and assigns it to board (DONE)
     
     4.  Function: Takes in board and mark (X or O) and then checks to see if mark has won
     
@@ -120,8 +120,7 @@ def Input_Move(): # next: make it so either X or O appears in the correct space
         
         
 def Game_Won():
-    #win_combination = ({   # shows the combination of keys for win conditions from a player 
-           
+  
         # Horizontal Win Combinations
         return ((board[7] == mark and board[8] == mark and board[9] == mark) or
         (board[4] == mark and board[5] == mark and board[6] == mark) or
@@ -134,9 +133,7 @@ def Game_Won():
         
         # Diagnonal Win Combinations
         (board[1] == mark and board[5] == mark and board[9] == mark) or
-        (board[3] == mark and board[5] == mark and board[7] == mark))
-
-           # })
+        (board[3] == mark and board[5] == mark and board[7] == mark))  
             
 
 def Game_Status_Check():
