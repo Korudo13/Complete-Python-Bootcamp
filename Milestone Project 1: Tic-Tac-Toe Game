@@ -117,21 +117,43 @@ def Input_Move(): # next: make it so either X or O appears in the correct space
         
     else:
         print('Invalid Move')
-            
-          
+        
+        
+def Game_Won():
+  
+        # Horizontal Win Combinations
+        return ((board[7] == mark and board[8] == mark and board[9] == mark) or
+        (board[4] == mark and board[5] == mark and board[6] == mark) or
+        (board[1] == mark and board[2] == mark and board[3] == mark) or
+        
+        # Vertical Win Combinations
+        (board[1] == mark and board[4] == mark and board[7] == mark) or
+        (board[2] == mark and board[5] == mark and board[8] == mark) or
+        (board[3] == mark and board[6] == mark and board[9] == mark) or
+        
+        # Diagnonal Win Combinations
+        (board[1] == mark and board[5] == mark and board[9] == mark) or
+        (board[3] == mark and board[5] == mark and board[7] == mark))  
+    
+
 def Random_Player_Select():
     import random
     if random.randint(0,1) == 0:
         return 'Player 1'
     else:
         return 'Player 2'
-        
+            
+
+def Space_Check(board, position):
+    return board[position] == ' '
+
+
 def Board_Full_Check(board):
     for i in range(1,10): # checks 1-9, same as board spaces / numpad
         if Space_Check(board, i): # if true
             return False # not a full board
     return True # no 'else' statement because I want to always check 1-9
-    
+
 def Next_Player_Move():
     position = ' '
     
@@ -140,17 +162,6 @@ def Next_Player_Move():
         
     return int(position)
 
-def Game_Status_Check():
-    # Make a function that checks if the game is won or ongoing       
-    
-    while game_won or game_tied == false:
-        game_ongoing == true
-
-    if game_ongoing == true:
-        game_won == false
-        game_tied == false
-        
-    elif game_ongoing == false:
-        return
-        
-        
+def Replay():
+    # Write a function that asks the player if they want to play again 
+    # and returns a boolean True if they want to play again
