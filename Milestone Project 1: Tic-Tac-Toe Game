@@ -9,16 +9,16 @@ Requirements:
                   
     3.  Function: Takes (on the board list object) a marker ('X' or 'O') and desired position (1-9) and assigns it to board (DONE)
     
-    4.  Function: Takes in board and mark (X or O) and then checks to see if mark has won
+    4.  Function: Takes in board and mark (X or O) and then checks to see if mark has won (DONE)
     
-    5.  Function: Uses random module to randomly decide which player goes first.
+    5.  Function: Uses random module to randomly decide which player goes first. (DONE)
     
-    6.  Function: returns boolean indicating whether space on board is freely available
+    6.  Function: returns boolean indicating whether space on board is freely available (DONE)
     
-    7.  Function: Checks if board is full and returns a boolean. True = full, False = not full
+    7.  Function: Checks if board is full and returns a boolean. True = full, False = not full (DONE)
     
     8.  Function: Asks for player's next position (1-9), then uses Step 6's function to check if it's a free position. 
-                  If so, return the position for later use.
+                  If so, return the position for later use. (DONE)
                   
     9.  Function: Asks player if they want to play again. Returns boolean True if player wants to play again.
     
@@ -117,23 +117,6 @@ def Input_Move(): # next: make it so either X or O appears in the correct space
         
     else:
         print('Invalid Move')
-        
-        
-def Game_Won():
-  
-        # Horizontal Win Combinations
-        return ((board[7] == mark and board[8] == mark and board[9] == mark) or
-        (board[4] == mark and board[5] == mark and board[6] == mark) or
-        (board[1] == mark and board[2] == mark and board[3] == mark) or
-        
-        # Vertical Win Combinations
-        (board[1] == mark and board[4] == mark and board[7] == mark) or
-        (board[2] == mark and board[5] == mark and board[8] == mark) or
-        (board[3] == mark and board[6] == mark and board[9] == mark) or
-        
-        # Diagnonal Win Combinations
-        (board[1] == mark and board[5] == mark and board[9] == mark) or
-        (board[3] == mark and board[5] == mark and board[7] == mark))  
             
           
 def Random_Player_Select():
@@ -148,6 +131,14 @@ def Board_Full_Check(board):
         if Space_Check(board, i): # if true
             return False # not a full board
     return True # no 'else' statement because I want to always check 1-9
+    
+def Next_Player_Move():
+    position = ' '
+    
+    while position not in '1 2 3 4 5 6 6 8 9'.split() or Space_Check(board, int(position)):
+        position = raw_input('Choose your next position: (1-9)')
+        
+    return int(position)
 
 def Game_Status_Check():
     # Make a function that checks if the game is won or ongoing       
@@ -155,7 +146,6 @@ def Game_Status_Check():
     while game_won or game_tied == false:
         game_ongoing == true
 
-    
     if game_ongoing == true:
         game_won == false
         game_tied == false
