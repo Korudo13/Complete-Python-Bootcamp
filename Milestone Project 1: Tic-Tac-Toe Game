@@ -142,6 +142,12 @@ def Random_Player_Select():
         return 'Player 1'
     else:
         return 'Player 2'
+        
+def Board_Full_Check(board):
+    for i in range(1,10): # checks 1-9, same as board spaces / numpad
+        if Space_Check(board, i): # if true
+            return False # not a full board
+    return True # no 'else' statement because I want to always check 1-9
 
 def Game_Status_Check():
     # Make a function that checks if the game is won or ongoing       
@@ -156,3 +162,5 @@ def Game_Status_Check():
         
     elif game_ongoing == false:
         return
+        
+        
