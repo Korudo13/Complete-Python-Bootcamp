@@ -135,6 +135,13 @@ def Game_Won():
         (board[1] == mark and board[5] == mark and board[9] == mark) or
         (board[3] == mark and board[5] == mark and board[7] == mark))  
             
+          
+def Random_Player_Select():
+    import random
+    if random.randint(0,1) == 0:
+        return 'Player 1'
+    else:
+        return 'Player 2'
 
 def Game_Status_Check():
     # Make a function that checks if the game is won or ongoing       
