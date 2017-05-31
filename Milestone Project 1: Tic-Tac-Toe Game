@@ -161,7 +161,21 @@ def Next_Player_Move():
         position = raw_input('Choose your next position: (1-9)')
         
     return int(position)
-
-def Replay():
+    
+def Replay_Game():
     # Write a function that asks the player if they want to play again 
     # and returns a boolean True if they want to play again
+    
+    replay_bool = False
+    replay_response = raw_input('Do you want to play again? Y/N ')
+    
+    if replay_response == 'y' or replay_response == 'Y':
+        replay_bool = True
+        print("Let's Play Again!")
+        
+    elif replay_response == 'n' or replay_response == 'N':
+        replay_bool = False
+        print ('Game Over')
+        
+    else:
+        print('invalid answer')
