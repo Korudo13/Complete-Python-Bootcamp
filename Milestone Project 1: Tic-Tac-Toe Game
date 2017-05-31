@@ -20,7 +20,7 @@ Requirements:
     8.  Function: Asks for player's next position (1-9), then uses Step 6's function to check if it's a free position. 
                   If so, return the position for later use. (DONE)
                   
-    9.  Function: Asks player if they want to play again. Returns boolean True if player wants to play again.
+    9.  Function: Asks player if they want to play again. Returns boolean True if player wants to play again. (DONE)
     
     10. Use while loops and functions I made to run the game.
     
@@ -197,3 +197,22 @@ def Replay_Game():
         
     else:
         print('invalid answer')
+        
+def Play_Game():
+    #  10. Use while loops and functions I made to run the game.
+    
+    print ("Tic Tac Toe! Let's Go!")
+    
+    '''
+    while True:
+        Set up game here
+        pass
+    
+    while game_happening:
+        Player 1 Turn
+        
+        Player 2 Turn
+        
+    if not Replay_Game():
+        break
+    '''
