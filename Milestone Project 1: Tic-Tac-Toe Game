@@ -22,7 +22,7 @@ Requirements:
                   
     9.  Function: Asks player if they want to play again. Returns boolean True if player wants to play again. (DONE)
     
-    10. Use while loops and functions I made to run the game.
+    10. Use while loops and functions I made to run the game. (mostly done)
     
 
 - 3 by 3 grid (done)
@@ -153,11 +153,11 @@ def Board_Full_Check(board):
             return False # not a full board
     return True # no 'else' statement because I want to always check 1-9
 
-def Next_Player_Move():
+def Next_Player_Move(board):
     position = ' '
     
     while position not in '1 2 3 4 5 6 6 8 9'.split() or Space_Check(board, int(position)):
-        position = raw_input('Choose your next position: (1-9)')
+        position = raw_input('Choose your next position: (1-9) ')
         
     return int(position)
 
@@ -180,7 +180,7 @@ def Replay_Game():
 print ("Tic Tac Toe! Let's Go!")
     
 while True:
-    the_Board = [' '] * 10
+    the_board = [' '] * 10
     player1_marker, player2_marker = Player_Input()
     turn = Choose_First_Player()
     print(turn + ' will go first!')
@@ -192,11 +192,11 @@ while True:
         if turn == 'Player 1':
             
             Draw_Board(the_board)
-            position = player_choice(the_board)
+            position = Next_Player_Move(the_board)
             Place_Marker(the_board, player1_marker, position)
                 
             if Victory_Check(the_board, player1_marker):
-                Display_Board(the_board)
+                Draw_Board(the_board)
                 print('Congratulations, Player 1 has won the game!')
                 game_on = False
                     
@@ -211,7 +211,7 @@ while True:
         else:
             # Player 2's turn
             Draw_Board(the_board)
-            position = player_choice(the_board)
+            position = Next_Player_Move(the_board)
             Place_Marker(the_board, player2_marker, position)
                 
             if Victory_Check(the_board, player2_marker):
