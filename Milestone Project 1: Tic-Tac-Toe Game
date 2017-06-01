@@ -71,7 +71,6 @@ def Place_Marker(board, marker, position):
     
     # Figure out how to translate this into Input_Move()    OR    rework Input_Move() to accept this intention more simply
 
-    
 def Input_Move(): # next: make it so either X or O appears in the correct space
     
     player_input = raw_input('Make your next move: ')
@@ -119,7 +118,7 @@ def Input_Move(): # next: make it so either X or O appears in the correct space
         print('Invalid Move')
         
         
-def Game_Won():
+def Victory_Check():
   
         # Horizontal Win Combinations
         return ((board[7] == mark and board[8] == mark and board[9] == mark) or
@@ -136,7 +135,7 @@ def Game_Won():
         (board[3] == mark and board[5] == mark and board[7] == mark))  
     
 
-def Random_Player_Select():
+def Choose_First_Player():
     import random
     if random.randint(0,1) == 0:
         return 'Player 1'
@@ -161,27 +160,6 @@ def Next_Player_Move():
         position = raw_input('Choose your next position: (1-9)')
         
     return int(position)
- 
- ''' first attempt
- 
-def Replay_Game():
-    # Write a function that asks the player if they want to play again 
-    # and returns a boolean True if they want to play again
-    
-    replay_bool = False
-    replay_response = raw_input('Do you want to play again? Y/N ')
-    
-    if replay_response == 'y' or replay_response == 'Y':
-        replay_bool = True
-        print("Let's Play Again!")
-        
-    elif replay_response == 'n' or replay_response == 'N':
-        replay_bool = False
-        print ('Game Over')
-        
-    else:
-        print('invalid answer')        
-'''
 
 def Replay_Game():
     replay_bool = False
@@ -198,21 +176,56 @@ def Replay_Game():
     else:
         print('invalid answer')
         
-def Play_Game():
-    #  10. Use while loops and functions I made to run the game.
+
+print ("Tic Tac Toe! Let's Go!")
     
-    print ("Tic Tac Toe! Let's Go!")
-    
-    '''
-    while True:
-        Set up game here
-        pass
-    
-    while game_happening:
-        Player 1 Turn
+while True:
+    the_Board = [' '] * 10
+    player1_marker, player2_marker = Player_Input()
+    turn = Choose_First_Player()
+    print(turn + ' will go first!')
         
-        Player 2 Turn
+    game_on = True
         
-    if not Replay_Game():
-        break
-    '''
+    while game_on:
+        
+        if turn == 'Player 1':
+            
+            Draw_Board(the_board)
+            position = player_choice(the_board)
+            Place_Marker(the_board, player1_marker, position)
+                
+            if Victory_Check(the_board, player1_marker):
+                Display_Board(the_board)
+                print('Congratulations, Player 1 has won the game!')
+                game_on = False
+                    
+            else:
+                if Board_Full_Check(the_board):
+                    Draw_Board(the_board)
+                    print ('The game is a draw!')
+                    break
+                else:
+                    turn = 'Player 2'
+                        
+        else:
+            # Player 2's turn
+            Draw_Board(the_board)
+            position = player_choice(the_board)
+            Place_Marker(the_board, player2_marker, position)
+                
+            if Victory_Check(the_board, player2_marker):
+                Draw_Board(the_board)
+                print('Congratulations, Player 2 has won the game!')
+                game_on = False
+                    
+            else:
+                if Board_Full_Check(the_board):
+                    Draw_Board(the_board)
+                    print ('The game is a draw!')
+                    break
+                else:
+                    turn = 'Player 1'
+
+if not Replay_Game():
+    break
