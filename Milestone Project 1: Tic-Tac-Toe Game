@@ -25,17 +25,6 @@ Requirements:
     10. Use while loops and functions I made to run the game. (DONE)
     
 
-- 3 by 3 grid (done)
-   - basic solution = done
-   - Goal: make the grid into a 3x3 list (array)
-        - Two Dimensional List
-- black background
-- white lines
-- Player 1 is Blue
-- Player 2 is Yellow
-- Winner is Green
-
-
 #####  code   ########
 
 from __future__ import print_function
