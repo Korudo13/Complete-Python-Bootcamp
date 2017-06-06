@@ -3,6 +3,12 @@ class Circle(object):
     # class object attributes
     pi = 3.14
     
+    #----shows radius and circumference as class attributes---#
+    radius_attribute = 100
+    
+    circumference_attribute = (2 * pi) * radius_attribute
+    #---------------------------------------------------------#
+    
     def __init__(self, radius=100):
         self.radius = radius
         
@@ -21,7 +27,8 @@ class Circle(object):
     def get_radius(self):
         return self.radius
     
-    
+    #------shows circumference as a method-----#
     def circumference(self):
         # 2 * pi * radius
         return (2 * Circle.pi) * self.radius
+    #------------------------------------------#
