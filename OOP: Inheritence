@@ -1,0 +1,25 @@
+# Displays Inheritance principles. Dog has access to eat(), since it inherets Animal() functionality
+
+class Animal(object):
+    
+    def __init__(self):
+        print 'Animal Created'
+        
+    def who_am_I(self):
+        print 'Animal'
+        
+    def eat(self):
+        print 'Eating'
+        
+        
+class Dog(Animal):
+    
+    def __init__(self):
+        Animal.__init__(self)
+        print 'Dog Created'
+        
+    def who_am_I(self):
+        print 'Dog'
+        
+    def bark(self):
+        print 'Woof!'
