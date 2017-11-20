@@ -1,11 +1,12 @@
 1. Write a function that computes the volume of a sphere given its radius.
 
-    import math
+import math
 
-    def volume(radius):
-      return (4*math.pi * radius**3)/3
+def volume(radius):
+    return (4*math.pi * radius**3)/3
 
-      print(volume(3))
+volume(2)
+print(volume(2))
       
 
 2. Write a function that checks whether a number is in a given range (Inclusive of high and low)
