@@ -56,17 +56,17 @@ upper_lower_check(s)
 
 5. Write a Python function to multiply all the numbers in a list.
 
-    singleDigitsList = [1,2,3,4,5,6,7,8,9]
+def multiplier(numbers):
+    product = 1
 
-    def NumbersListMultiplyFunction(numbersList):
+    for number in range(0, len(numbers)):
+        product *= numbers[number]
 
-        product = 1
+    return product
+    
+numbers = [2,2,2]
+print multiplier(numbers)
 
-        for number in range(0,len(numbersList)):
-            product *= numbersList[number]
-
-        return product
-        
 
 6. Write a Python function that checks whether a passed string is a palindrome or not.
 
