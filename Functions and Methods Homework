@@ -24,22 +24,25 @@ print(volume(2))
 3. Write a Python function that accepts a string and calculate the number of upper case letters
    and lower case letters.
           
-         upperLowerString = 'Las Vegas and New York City are big cities in the United States.'
-          
-         def UpperLowerCheck(string):
 
-            charCounter = {'upper': 0, 'lower':0}
-    
-            for char in string:
-                if char.isupper():
-                    charCounter['upper']+=1
-                elif char.islower():
-                    charCounter['lower']+=1
-                else:
-                    pass
-            print 'Original string : ', string
-            print 'Number of Upper Case characters: ', charCounter['upper']
-            print 'Number of lower case characters: ', charCounter['lower']
+def upper_lower_check(s):
+    char_counter = {"upper": 0, "lower": 0}
+    for c in s:
+        if c.isupper():
+            char_counter["upper"] += 1
+
+        elif c.islower():
+            char_counter["lower"] += 1
+
+        else:
+            pass
+
+    print "Original string: ", s
+    print "Number of Uppercase characters: ", char_counter["upper"]
+    print "Number of lowercase characters: ", char_counter["lower"]
+
+s = "Las Vegas and New York City are big cities in the United States!"
+upper_lower_check(s)
 
           
 4. Write a Python function that takes a list and returns a new list with unique elements of the first list.
