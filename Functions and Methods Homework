@@ -71,15 +71,20 @@ print multiplier(numbers)
 6. Write a Python function that checks whether a passed string is a palindrome or not.
 
 palindrome1 = 'racecar'
-fakePalindrome = 'racecarSandwich'
+fakePalindrome = 'ambition'
 
 def PalindromeChecker(palindromeString):
     reversedWord = palindromeString[::-1]
     if reversedWord == palindromeString:
+        print reversedWord
         print 'This is a palindrome!'
     else:
+        print reversedWord
         print 'This is not a palindrome...'
-        
+
+print PalindromeChecker(palindrome1)
+print PalindromeChecker(fakePalindrome)
+
 
 7. Write a Python function to check whether a string a pangram or not.
 
