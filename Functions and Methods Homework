@@ -70,37 +70,42 @@ print multiplier(numbers)
 
 6. Write a Python function that checks whether a passed string is a palindrome or not.
 
-palindrome1 = 'racecar'
-fakePalindrome = 'ambition'
+palindrome_1 = 'racecar'
+fake_Palindrome = 'ambition'
 
-def PalindromeChecker(palindromeString):
-    reversedWord = palindromeString[::-1]
-    if reversedWord == palindromeString:
-        print reversedWord
+def palindrome_checker_method(palindrome_string):
+    reversed_word = palindrome_string[::-1]
+    if reversed_word == palindrome_string:
+        print reversed_word
         print 'This is a palindrome!'
     else:
-        print reversedWord
+        print reversed_word
         print 'This is not a palindrome...'
 
-print PalindromeChecker(palindrome1)
-print PalindromeChecker(fakePalindrome)
+print palindrome_checker_method(palindrome_1)
+print palindrome_checker_method(fake_Palindrome)
 
 
 7. Write a Python function to check whether a string a pangram or not.
 
     Note: Pangrams are words or sentences containing every letter of the alphabet at least once.
     
-      import string 
-      
-      pangramExample = 'The quick brown fox jumps over the lazy dog'
-      fakePangram = 'Duck quick quack'
-      
-      alphabet = set(string.ascii_lowercase)
-      
-      def PangramCheckFunction(pangramString):
-        print pangramString
-        pangramSet = set(pangramString)
-        if pangramSet >= alphabet:
-            print 'This IS a pangram'
-        else:
-            print 'This NOT a pangram'
+import string
+
+pangram_example = "The quick brown fox jumps over the lazy dog"
+fake_pangram = "Duck quick quack"
+
+alphabet = set(string.ascii_lowercase)
+
+def pangram_check_method(pangram_string):
+    print pangram_string
+    pangram_set = set(pangram_string)
+
+    if pangram_set >= alphabet:
+        print "This is a pangram"
+
+    else:
+        print "This is NOT a pangram"
+
+print pangram_check_method(pangram_example)
+print pangram_check_method(fake_pangram)
