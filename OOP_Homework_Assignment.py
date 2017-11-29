@@ -26,3 +26,31 @@ coordinate2 = (5,8)
 li = Line(coordinate1,coordinate2)
 print li.distance()
 print li.slope()
+
+
+'''
+Problem 2:
+
+Fill in the class that alculates the radius and surface area of a cylinder
+'''
+
+class Cylinder(object):
+
+    pi = 3.14
+
+    def __init__(self, height=1, radius=1):
+        self.height = height
+        self.radius = radius
+
+    def volume(self):
+        return Cylinder.pi * (self.radius**2) * self.height
+
+    def surface_area(self):
+        a = Cylinder.pi * (self.radius)**2
+        b = Cylinder.pi * self.radius * self.height
+        return (2*a) + (2*b)
+
+c = Cylinder(2,3)
+
+print c.volume()
+print c.surface_area()
